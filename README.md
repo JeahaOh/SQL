@@ -1,8 +1,9 @@
 # SQL
-SQL 복습  
+DB와 SQL 복습  
+DB, SQL 정의  
 Oracle -> PostgreSQL -> MariaDB
 
-# **DB** : Database
+# **Database(DB)?**
 데이터의 집합, 검색 수정 삭제 추가등 관리.  
   
 ## 파일 시스템의 문제점 해결
@@ -48,20 +49,49 @@ Table ; 표
 # SQL? (Structured Query Language)
 사용자와 관계형 데이터베이스를 연결시켜주는 표준 검색언어.  
 쉽게 얘기해서 데이터베이스를 다루기위해 디자인된 언어임.  
-프로그래밍 언어는 아니지만 Java 등 다른 프로그래밍 언어보다 더 많이 사용될 수밖에 없음.  
   
+프로그래밍 언어는 아니지만 Java 등 다른 프로그래밍 언어보다 더 많이 사용됨.  
+테이블을 비롯한 객체(시퀀스, 인덱스 등)을 생성, 제어하는 역할.  
+관계형 DB의 ANSI 표준 언어.  
+  
+## SQL의 종류
+- DQL (Data Query Language; 질의어)
+  - SELECT
+  
+- DML (Data Manipulation Language; 데이터 조작어)
+  - INSERT
+  - UPDATE
+  - DELETE
+  
+- DDL (Data Definition Language; 데이터 정의어)  
+  DB **테이블**의 생성, 수정, 삭제 (정의)하기 위한 언어  
+  - CREATE
+  - ALTER
+  - DROP
+  - RENAME
+  - TRUNCATE
+
+- TCL (Transaction Control Language; 트랜젝션 처리어)
+  - COMMIT    : 트랜젝션의 정상적인 종료 처리
+  - ROLLBACK  : 트랜젝션 취소
+  - SAVEPOINT : 트랜젝셩 내 임시 저장지점 설정
+
+- DCL (Data Control Language: 데이터 제어어)
+  - GRANT   : DB에 대한 권한 부여
+  - REVOKE  : DB에 대한 권한 박탈
+
 # DB 설치 없이 Oracle DB 실습하기.
 SQL에서 부족한 점이 느껴져서 공부 하려고 했는데 Oracle DB를 어디에 설치할지 고민이였음,  
-BUT!! Oracle에서 설치 없이 SQL을 돌릴 수 있는 웹 기반 서비스가 있었음..  
+**BUT!!** Oracle에서 설치 없이 SQL을 돌릴 수 있는 웹 기반 서비스가 있었음..  
 당연히 오라클 계정이 있어야 함.  
-[LINK](https://livesql.oracle.com/)  
+[https://livesql.oracle.com/](https://livesql.oracle.com/)  
 
 세션, 쿠키, JS 기반으로 테이블과 데이터들을 정의하고, 일정 시간이 지나면 데이터가 삭제 되는 듯?
 
 Oracle 테스트 데이터인 HR을 사용하고 싶다면,
-[LINK](https://livesql.oracle.com/apex/livesql/file/content_GV8MU6SITA2V3VYI179FAJUCY.html)로 접속,
+[https://livesql.oracle.com/apex/livesql/file/content_GV8MU6SITA2V3VYI179FAJUCY.html](https://livesql.oracle.com/apex/livesql/file/content_GV8MU6SITA2V3VYI179FAJUCY.html)로 접속,
 RUN SCRIPT 버튼을 눌러주면 내 계정에서 사용이 가능함.
 
-[LINK](https://livesql.oracle.com/apex/f?p=590:49:::NO:::)로 접속 하면 그 외 샘플 데이터와 학습 자료들이 있음.
-단점이라면 영어라는것..?
+[https://livesql.oracle.com/apex/f?p=590:49:::NO:::](https://livesql.oracle.com/apex/f?p=590:49:::NO:::)로 접속 하면 그 외 샘플 데이터와 학습 자료들이 있음.
+**단점**이라면 영어라는것..?
 
