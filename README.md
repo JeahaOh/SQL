@@ -35,8 +35,8 @@ Oracle -> PostgreSQL -> MariaDB
 일반적인 DB, 작성과 이용이 편함, 응용프로그램을 변경하지 않아도 참삭이 편함.  
 정보들을 Table형태로 저장함.  
 테이블은 2차원 형태의 표처럼 row(행), column(열)로 구성.  
-
-Table ; 표
+  
+Table ; 표  
 | Row \ Table | Column | Column | Column |
 |-------------|--------|--------|--------|
 |     Num     |   1    |   2    |   3    |
