@@ -37,7 +37,7 @@ Oracle -> PostgreSQL -> MariaDB
 테이블은 2차원 형태의 표처럼 row(행), column(열)로 구성.  
   
 Table ; 표  
-| Row \ Table | Column | Column | Column |
+|`Row \ Column`| Column | Column | Column |
 |-------------|--------|--------|--------|
 |     Num     |   1    |   2    |   3    |
 |  Eng  Char  |   a    |   b    |   c    |
