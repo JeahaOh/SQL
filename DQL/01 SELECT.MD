@@ -35,12 +35,19 @@ SELECT  *
 FROM    employees;
 ```
   
-## 원하는 열만 조회하고 정렬하기
+## 원하는 열만 조회하기
 ```
 SELECT employee_id, first_name, last_name
 FROM   employees
 ORDER BY  employee_id DESC;
 ```
+
+# ORDER BY 절로 정렬하기
+정렬 하기 위해 ORDER BY 절을 사용함.  
+어떤 열을 기준으로 정렬할 것인지 명시함.  
+날짜, 문자, 숫자 모두 가능함. 두번 이상 제시할 경우 앞부분의 조건에서 동일 충족시 뒷부분 조건으로 정렬함.
+- ASC   ; 오름차순 ( Ascending )
+- DEXC  ; 내림차순 ( Descending )
 
 ## 중복된 출력값 제거하기
 DISTINCT 뒤에 열이 계속 나열되면 원하는 값이 나오지 않을 수 있으니 ()를 신경 써야 함.  
