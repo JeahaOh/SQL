@@ -7,6 +7,7 @@ Oracle -> PostgreSQL -> MariaDB
 데이터의 집합, 검색 수정 삭제 추가등 관리.  
   
 ## 파일 시스템의 문제점 해결
+- 파일을 사용하여 데이터를 관리하는 방법.
 - 데이터의 종속
 - 데이터의 중복
   - 일관성 - 동일성을 유지하기 위해 데이터 중복을 피하기 위해
@@ -14,7 +15,10 @@ Oracle -> PostgreSQL -> MariaDB
   - 경제성 - 저장되는 공간에 대한 비용 절감
   - 무결성 - 데이터의 정확성을 유지
 
-## DB의 정의 
+
+## 데이터베이스 관리시스템 (DBMS : DataBase Management System)
+효율적으로 관리하고 검색할 수 있는 환경을 제공, 체계적인 활용을 가능케함.  
+응용프로그램과 데이터베이스의 중계  
 - 통합된 데이터 (Integrated Data)
   - 원칙적으로 데이터 중복되어 있지 않게함
 - 저장된 데이터 (Stored Data)
@@ -23,16 +27,15 @@ Oracle -> PostgreSQL -> MariaDB
   - 존재 목적이 명확하고 유용성을 지니고 있음
 - 공용 데이터 (Shared Data)
   - 여러 사용자들이 서로 다른 목적으로 공유가 가능한.
-
+  
+## DBMS의 3단계 구조
+데이터 추상화와 데이터 독립성을 확보하기 위한 외부(뷰) - 논리(개념) - 물리적(저장) 3단계 구조.  
+  
 ## DB의 특징
 실시간 접근성, 지속적인 변화, 동시 공유, 내용에 대한 참조
-
-## 데이터베이스 관리시스템 (DBMS : DataBase Management System)
-효율적으로 관리하고 검색할 수 있는 환경을 제공, 체계적인 활용을 가능케함.  
-응용프로그램과 데이터베이스의 중계  
   
 ## 관계형 데이터베이스 관리 시스템
-일반적인 DB, 작성과 이용이 편함, 응용프로그램을 변경하지 않아도 참삭이 편함.  
+일반적인 DB, 작성과 이용이 편함, 응용프로그램을 변경하지 않아도 첨삭이 편함.  
 정보들을 Table형태로 저장함.  
 테이블은 2차원 형태의 표처럼 row(행), column(열)로 구성.  
   
@@ -42,7 +45,7 @@ Oracle -> PostgreSQL -> MariaDB
 |  Eng  Char  |   a    |   b    |   c    |
 |  Kor  Char  |   ㄱ   |   ㄴ    |   ㄷ    |
   
-[참고](https://ko.wikipedia.org/wiki/데이터베이스_관리_시스템)  
+[참고 : ko.wikipedia.org/wiki/데이터베이스_관리_시스템](https://ko.wikipedia.org/wiki/데이터베이스_관리_시스템)  
   
   
 # SQL? (Structured Query Language)
